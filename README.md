@@ -3,9 +3,10 @@
 
 This project introduces the motto of Lopburi Province using HTML and CSS. The main aim is to present the cultural and historical significance of the province through a simple and elegant web page.
 
-## Features
+## Video
 
-- **HTML Structure**
-  - Semantic HTML to structure the content clearly.
-- **CSS Styling**
-  - Custom CSS for styling the page to make it visually appealing.
+https://drive.google.com/file/d/15w2PpD-9MnLggfitrPh_ZQ5zTE0-b6Hl/view?usp=sharing
+
+## Website
+
+Visit the project website: https://lopburipromot.vercel.app/
