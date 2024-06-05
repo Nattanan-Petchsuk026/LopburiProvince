@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+* li {
+  list-style: none;
+}
+.container {
+  min-height: 120vh;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+.bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.bg::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(45%);
+  background-image: url("https://static.thairath.co.th/media/Dtbezn3nNUxytg04ajTQXxKSopPgGFVVcEnzM4PKyapHWJ.jpg");
+  background-size: cover;
+  background-position: center;
+  animation: animateBackground 30s ease-in-out infinite alternate;
+}
+
+@keyframes animateBackground {
+  0% {
+    background-image: url("https://static.thairath.co.th/media/Dtbezn3nNUxytg04ajTQXxKSopPgGFVVcEnzM4PKyapHWJ.jpg");
+  }
+  50% {
+    background-image: url("https://th.readme.me/f/37869/60b7a25c6661d90b2b364db6.jpg");
+  }
+  100% {
+    background-image: url("https://static.thairath.co.th/media/Dtbezn3nNUxytg04ajTQXxKSopPgGFVVcEnzM4PKyapHWJ.jpg");
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+}
+.lopburi {
+  color: #fff;
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.lopburi::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lopburi h2 {
+  font-size: 2rem;
+  letter-spacing: 2.8px;
+  animation: shakeAndColorChange 5s ease-in-out infinite alternate;
+}
+
+@keyframes shakeAndColorChange {
+  0% {
+    transform: translateX(0);
+    color: #fd7e13;
+  }
+  50% {
+    transform: translateX(-5px);
+    color: #4caf50;
+  }
+  100% {
+    transform: translateX(5px);
+    color: #13b3fd;
+  }
+}
+
+.card {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+.card h2 {
+  color: #fff;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+.card .box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+  width: 80%;
+  height: 260px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.box1 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%93%E0%B9%8C%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%A8%E0%B8%99%E0%B9%8C_-1.jpg/2560px-%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%93%E0%B9%8C%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%A8%E0%B8%99%E0%B9%8C_-1.jpg");
+}
+.box2 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/29/Lopbsanpkan0306a.jpg");
+}
+.box3 {
+  background-image: url("https://travel.mthai.com/app/uploads/2018/03/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%873.jpg");
+}
+.box4 {
+  background-image: url("https://barbieben.wordpress.com/wp-content/uploads/2017/02/original-1426336874284.jpg");
+}
+.box5 {
+  background-image: url("https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5K8CWIZw1dlr1nSZPesqZDnQxjM4PEALcOM03eipdVGtioeOhq8.jpg");
+}
+.box6 {
+  background-image: url("https://cbtthailand.dasta.or.th/upload-file-api/Resources/RelateAttraction/Images/RAT160029/1.jpeg");
+}
+.lopburi h2 {
+  font-size: 2rem;
+  letter-spacing: 2.8px;
+}
+.text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.txt h1 {
+  font-size: 7rem;
+}
+.lopburi p {
+  opacity: 0.4;
+}
+.tnx h2 i {
+  color: #fd1313;
+}
+.card div {
+  transition: 0.5s;
+}
+.card div:hover {
+  transition: 0.3s;
+  transform: translateY(-10px);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.card div {
+  overflow: hidden;
+  position: relative;
+}
+
+.card div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: left 0.3s;
+}
+
+.card div:hover::before {
+  left: 0;
+}
+
+.card div h2 {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card div:hover h2 {
+  opacity: 1;
+}
+
+/* Media queries  */
+@media screen and (max-width: 768px) {
+  .bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .bg::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("https://www.charnveeresortkhaoyai.com/wp-content/uploads/2023/04/Rancho-jan-9-4.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: animateBackground 30s ease-in-out infinite alternate;
+  }
+
+  @keyframes animateBackground {
+    0% {
+      background-image: url("https://www.charnveeresortkhaoyai.com/wp-content/uploads/2023/04/Rancho-jan-9-4.jpg");
+    }
+    50% {
+      background-image: url("https://img.kapook.com/u/2022/supattra_wat/lopburi/lop3.jpg");
+    }
+    100% {
+      background-image: url("https://www.charnveeresortkhaoyai.com/wp-content/uploads/2023/04/Rancho-jan-9-4.jpg");
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 105%;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+  }
+  .lopburi {
+    color: #fff;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .lopburi::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .card .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6 {
+    width: 90%;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .card div h2 {
+    font-size: 1rem;
+    bottom: 5px;
+    left: 5px;
+  }
+
+  .tnx h2 i {
+    font-size: 1.5rem;
+  }
+
+  .txt h1 {
+    font-size: 3rem;
+  }
+
+  .txt {
+    margin-bottom: 40px;
+  }
+}
