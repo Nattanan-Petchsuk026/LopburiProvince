@@ -9,4 +9,4 @@ https://drive.google.com/file/d/15w2PpD-9MnLggfitrPh_ZQ5zTE0-b6Hl/view?usp=shari
 
 ## Website
 
-Visit the project website: https://lopburipromot.vercel.app/
+Visit the project website: https://lopburipromot-1n3v.vercel.app/
